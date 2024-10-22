@@ -1,6 +1,6 @@
 # Semantic Search CLI for PDF Files
 
-This Rust-based command-line tool allows you to index PDF files and perform semantic searches on their content. It uses advanced natural language processing techniques to understand the meaning behind your search queries and find relevant results within the indexed PDFs.
+This Rust-based command-line tool allows you to *locally* index your private PDF files and perform semantic searches on their content.
 
 [![asciicast](https://asciinema.org/a/XAMRn9IOvU7lN5GDcUehJJYkX.svg)](https://asciinema.org/a/XAMRn9IOvU7lN5GDcUehJJYkX)
 
@@ -66,7 +66,7 @@ Replace `<QUERY>` with your search query.
 
 - The tool caches the index in the user's local data directory for faster subsequent searches.
 - It runs on the amazing [ort](https://ort.pyke.io/) runtime for fast vector embedding generation.
-- It uses the [usearch](https://github.com/unum-cloud/usearch) crate to perform efficient semantic search operations.
+- It uses the [usearch](https://github.com/unum-cloud/usearch) crate to perform efficient vector search operations using [HNSW](https://en.wikipedia.org/wiki/Hierarchical_navigable_small_world) index.
 - Text extraction from PDF pages is handled by the [pdfium-render](https://github.com/ajrcarey/pdfium-renders) crate.
 - The [image](https://github.com/image-rs/image) crate is used to extract text from images embedded in PDFs.
 - Search results and PDF file details are stored using SQLite via the [rusqlite](https://github.com/rusqlite/rusqlite) crate.
