@@ -65,6 +65,7 @@ Replace `<QUERY>` with your search query.
 ## Technical Details
 
 - The tool caches the index in the user's local data directory for faster subsequent searches.
+- It runs on the amazing [ort](https://ort.pyke.io/) runtime for fast vector embedding generation.
 - It uses the [usearch](https://github.com/unum-cloud/usearch) crate to perform efficient semantic search operations.
 - Text extraction from PDF pages is handled by the [pdfium-render](https://github.com/ajrcarey/pdfium-renders) crate.
 - The [image](https://github.com/image-rs/image) crate is used to extract text from images embedded in PDFs.
