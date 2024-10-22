@@ -20,16 +20,20 @@ Please note that this CLI is still under active development and is not yet avail
 To use this CLI in its current state:
 
 1. Ensure you have Rust and Cargo installed on your system.
-2. Clone this repository:
+2. Install tesseract package for parsing PDF
+   ```
+   brew install tesseract
+   ```
+3. Clone this repository:
    ```
    git clone https://github.com/breakpointninja/semantic_search_cli.git
    cd semantic_search_cli
    ```
-3. To build the project:
+4. To build the project:
    ```
    cargo build
    ```
-4. To run the CLI:
+5. To run the CLI:
    ```
    cargo run -- [arguments]
    ```
